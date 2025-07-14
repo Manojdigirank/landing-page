@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    input::placeholder,
+    textarea::placeholder {
+      color: #fff !important;
+      opacity: 0.7;
+    }
+
+    select option {
+      color: #000 !important;
+
+    }
+
+    select.form-select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='white' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 12px 8px;
+      padding-right: 2.5rem;
+      color: #fff;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      background-color: transparent;
+    }
+
+    select.form-select option {
+      color: #000;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <section class="bg-warning text-center py-3 sticky-top shadow z-3">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+
+      <!-- Brand Logo -->
+      <a href="#">
+        <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/ampss.png" alt="Brand Logo"
+          class="img-fluid" style="height: 60px; ">
+      </a>
+
+      <!-- Navbar Links -->
+      <div class="d-flex gap-3 align-items-center mt-2 mt-md-0">
+        <a href="#Home" class="text-black fw-bold text-decoration-none">Home</a>
+        <a href="#about-us" class="text-black fw-bold text-decoration-none">About</a>
+        <a href="#courses" class="text-black fw-bold text-decoration-none">Courses</a>
+        <a href="#why-choose" class="text-black fw-bold text-decoration-none">Why AMPS</a>
+        <a href="#faculty" class="text-black fw-bold text-decoration-none">Faculty</a>
+        <a href="#faq" class="text-black fw-bold text-decoration-none">FAQs</a>
+        <a href="#contact" class="text-black fw-bold text-decoration-none">Contact</a>
+        <a href="#course-details" class="btn btn-dark text-white fw-bold px-3 rounded-pill">Apply Now</a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Hero Section with Background Image -->
+  <section class="hero position-relative text-center text-white d-flex align-items-center"
+    style="height: 50vh; background: url('https://i5.walmartimages.com/seo/SKYSONIC-Lightweight-Soft-Area-Rugs-Musical-Instrument-Floor-Mat-Kids-Playing-Room-Hardwood-Living-63-x-48-inch-5-3-4-Nursery_cc00f0e3-5215-40a2-92e5-c57ecae27469.c5de706b98931159ad1a9421adfef2fd.jpeg') center center / cover no-repeat;">
+    <!-- Overlay Dark Layer -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+
+    <!-- Hero Content -->
+    <div class="container position-relative z-1">
+      <h1 class="display-4 fw-bold text-white">From Bedroom Beats to Billboard Dreams</h1>
+      <p class="lead mb-4">Only 12 Students. 2 Powerful Courses.</p>
+      <a href="#contact" class="btn btn-warning text-black fw-bold rounded-pill px-4 py-2">Get Course Details</a>
+    </div>
+  </section>
+
+  <!-- Blank Yellow Container Section -->
+  <section class="bg-warning py-5">
+    <div class="container">
+      <!-- You can add content here later if needed -->
+    </div>
+  </section>
+
+
+  <!-- About Us Section with Video and Sound Toggle -->
+  <section id="about-us" class="py-5 bg-black text-white">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Video with Mute Toggle -->
+        <div class="col-md-6 mb-4 mb-md-0 position-relative" data-aos="fade-right">
+          <video id="aboutVideo" class="w-100 rounded-4 shadow-lg" autoplay muted loop playsinline>
+            <source src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/AMPS-Promo-H-F.mp4"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <!-- Mute/Unmute Button -->
+          <button id="toggleSound" class="btn btn-warning position-absolute bottom-0 start-0 m-3">
+            🔇 Unmute
+          </button>
+        </div>
+
+        <!-- Text Right -->
+        <div class="col-md-6" data-aos="fade-left">
+          <h2 class="text-warning mb-3">ABOUT US</h2>
+          <p class="fs-5 lh-lg">
+            <strong>Adanj</strong> (Estd. 2014) is a multi-award-winning film and music production house, delivering
+            industry-standard creative solutions. Introducing <strong>AMPS</strong> — an academy of music production &
+            sound engineering — offering two complete master courses designed for passionate individuals who dream of
+            standing tall in the music world and turning that dream into reality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Courses Offered Section -->
+  <section id="courses" class="py-5 bg-black text-white">
+    <div class="container text-center">
+      <h2 class="mb-4 text-warning" data-aos="fade-up">Courses Offered</h2>
+
+      <div class="row g-5 justify-content-center">
+
+        <!-- Course 1 -->
+        <div class="col-md-10" data-aos="fade-right">
+          <div class="row align-items-center border border-white rounded p-4">
+            <!-- Text Left -->
+            <div class="col-md-6 text-start">
+              <h5 class="fw-bold text-warning">6 Month Certification Course</h5>
+              <ul>
+                <li>● Certification in Music Production & Sound Engineering</li>
+                <li>● Duration: 6 Months</li>
+                <li>● Production Academy training</li>
+                <li>● Composition & Mixing techniques</li>
+                <li>● Live projects</li>
+                <li>● Certification from Adanj Production Academy</li>
+              </ul>
+              <a href="#contact" class="btn btn-warning mt-3 text-black">Get Full Details</a>
+            </div>
+            <!-- Image Right -->
+            <div class="col-md-6">
+              <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/deploma.png" alt="Course 1"
+                class="img-fluid rounded shadow" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="col-md-10" data-aos="fade-left">
+          <div class="row align-items-center border border-white rounded p-4 flex-md-row-reverse">
+            <!-- Text Right -->
+            <div class="col-md-6 text-start">
+              <h5 class="fw-bold text-warning">1-Year Diploma Course</h5>
+              <ul>
+                <li>● Professional Diploma in Music Direction & Production</li>
+                <li>● Duration: 12 Months</li>
+                <li>● Full Music Production Curriculum</li>
+                <li>● Advanced Audio Engineering</li>
+                <li>● Portfolio Building</li>
+                <li>● Internship & Live Projects</li>
+                <li>● Diploma Certificate</li>
+              </ul>
+              <a href="#contact" class="btn btn-warning mt-3 text-black">Get Full Details</a>
+            </div>
+            <!-- Image Left -->
+            <div class="col-md-6">
+              <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/1-yr.png" alt="Course 2"
+                class="img-fluid rounded shadow" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY JOIN OFFLINE Section -->
+  <section id="why-offline" class="py-5 bg-black text-white">
+    <div class="container">
+      <h2 class="text-center text-warning fw-bold mb-5" data-aos="fade-up">WHY JOIN OFFLINE?</h2>
+
+      <div class="card bg-dark text-white p-4 border border-light rounded-4 shadow-lg" data-aos="zoom-in">
+        <div class="row align-items-center">
+
+          <!-- Icon/Image -->
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <img src="https://cdn-icons-png.flaticon.com/512/4113/4113038.png" alt="Offline Learning" class="img-fluid"
+              style="max-height: 150px;" data-aos="fade-right" data-aos-delay="200">
+          </div>
+
+          <!-- Text Content -->
+          <div class="col-md-8" data-aos="fade-left" data-aos-delay="300">
+            <h4 class="fw-bold text-warning">Because true growth needs more than just videos and virtual lessons.</h4>
+            <p class="mb-2">
+              In a real space, you don’t just watch. You interact, get real-time feedback, feel the energy of others,
+              and stay accountable.
+            </p>
+            <p class="mb-0">
+              You learn not just from a screen, but from your surroundings, your mentors, and your peers.
+              <strong>That's the difference. That's the magic.</strong>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Why Choose Us Section -->
+  <section id="why-choose" class="py-5 bg-black text-white">
+    <div class="container text-center" style="max-width: 900px;">
+      <h2 class="mb-4 text-warning" data-aos="fade-up">WHY AMPS?</h2>
+      <div class="row g-4 justify-content-center">
+
+        <!-- Reason 1 -->
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card bg-dark text-white h-100 p-3 border border-white">
+            <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/music-production-ing.png"
+              class="card-img-top rounded" alt="Experience" style="max-height: 180px; object-fit: cover;">
+            <div class="card-body text-start">
+              <h5 class="fw-bold text-warning fs-5">Transformation Begins with Mindset</h5>
+              <ul class="mb-0 small">
+                <li>True transformation needs the right attitude and guidance.</li>
+                <li>At AMPS, we believe skill without mindset is just noise. We shape both.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reason 2 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card bg-dark text-white h-100 p-3 border border-white">
+            <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/small-batch.png"
+              class="card-img-top rounded" alt="Expert Team" style="max-height: 180px; object-fit: cover;">
+            <div class="card-body text-start">
+              <h5 class="fw-bold text-warning fs-5">More Than Just Skills</h5>
+              <ul class="mb-0 small">
+                <li>This course doesn’t just teach skills – it builds your artistic identity.</li>
+                <li>You’ll learn how to think like a creator, not just how to operate tools.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reason 3 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card bg-dark text-white h-100 p-3 border border-white">
+            <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/real-world-expernce.png"
+              class="card-img-top rounded" alt="Support" style="max-height: 180px; object-fit: cover;">
+            <div class="card-body text-start">
+              <h5 class="fw-bold text-warning fs-5">Designed for the Real World</h5>
+              <ul class="mb-0 small">
+                <li>Stand out in the competitive music industry.</li>
+                <li>Training aligned with real-world creativity, professionalism, and performance.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Class Schedule Section -->
+  <section id="class-schedule" class="py-5 bg-dark text-light">
+    <div class="container">
+      <div class="rounded-4 p-4 p-md-5 bg-dark shadow-lg">
+        <div class="row align-items-center">
+
+          <!-- Text Content -->
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+            <h2 class="fw-bold text-warning display-5 mb-3">Class Schedule</h2>
+            <p class="fs-5 mb-4">
+              Our schedule gives you the structure to stay consistent and the space to grow on your own.
+              With focused classes and inspiring workshops, it’s designed to balance learning with real creative
+              exploration.
+            </p>
+
+            <div class="fs-5">
+              <p class="mb-3">
+                🔴 <strong class="text-danger">Regular Classes:</strong><br>
+                Every <strong>Monday and Thursday</strong><br>
+                <span class="text-muted">9:00 AM – 12:00 PM</span>
+              </p>
+
+              <p>
+                🟢 <strong class="text-success">Workshops:</strong><br>
+                <strong>2nd & 4th Saturday</strong> of each month<br>
+                <small class="text-light fst-italic">*Timings may vary based on the guest artist or mentor.</small>
+              </p>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="col-lg-6 text-center" data-aos="fade-left">
+            <img src="images/image.png" alt="Class Schedule Illustration" class="img-fluid rounded-4 shadow-sm"
+              style="max-width: 50%; height: auto;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHAT YOU’LL GET SECTION ========== -->
+  <section class="py-5 bg-black text-white">
+    <div class="container">
+      <h2 class="text-warning text-center fw-bold mb-5" data-aos="fade-up">What You’ll Get From This AMPS Course</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" data-aos="fade-up">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <img src="images/3.png" class="card-img-top" alt="Industry-Level Training">
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Industry-Level Training</h5>
+              <p class="card-text"> Hands-on sessions in a professional studio.
+              </p>
+              <p class="card-text">
+                Practical understanding of gear and software.
+              </p>
+              <p class="card-text">
+                Real-world implementation of music concepts.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <img src="images/1.png" class="card-img-top" alt="Mentorship from Experts">
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Mentorship from Experts</h5>
+              <p class="card-text">Learn directly from industry professionals with years of experience and success.</p>
+              <p class="card-text">Job placement assistance.</p>
+              <p class="card-text">Mentorship for life from team AMPS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <img src="images/2.png" class="card-img-top" alt="Portfolio Development">
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Portfolio Development</h5>
+              <p class="card-text">Support to plan & host your own music events.</p>
+              <p class="card-text">Internship opportunities at Adanj Studio, major music concerts and
+                theatre productions.</p>
+              <p class="card-text">Mumbai industry exposure and expert meet-and-greet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CAREER OPPORTUNITIES SECTION ========== -->
+  <section class="py-5 bg-black text-white">
+    <div class="container">
+      <h2 class="text-warning text-center fw-bold mb-5" data-aos="fade-up">Career Opportunities After AMPS</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" data-aos="fade-up">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <!-- <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/music-producer.jpg" -->
+            <!-- class="card-img-top" alt="Music Producer"> -->
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Music Composer</h5>
+              <p class="card-text">Creates original melodies and compositions for songs, films, or games.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <!-- <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/sound-engineer.jpg" -->
+            <!-- class="card-img-top" alt="Sound Engineer"> -->
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Live Performer</h5>
+              <p class="card-text">Performs music or vocals live on stage in concerts or events.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <!-- <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/independent-artist.jpg" -->
+            <!-- class="card-img-top" alt="Independent Artist"> -->
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Music Producer</h5>
+              <p class="card-text">Oversees and shapes the sound of a recording or track from start to finish.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <!-- <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/independent-artist.jpg" -->
+            <!-- class="card-img-top" alt="Independent Artist"> -->
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Jingle Composer </h5>
+              <p class="card-text">Creates catchy short tunes for advertisements and brand promotions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <!-- <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/independent-artist.jpg" -->
+            <!-- class="card-img-top" alt="Independent Artist"> -->
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Sound Designer </h5>
+              <p class="card-text">Develops sound effects and audio environments for films, games, or theatre.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <!-- <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/independent-artist.jpg" -->
+            <!-- class="card-img-top" alt="Independent Artist"> -->
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Film Sound Recordist</h5>
+              <p class="card-text">Captures high-quality audio on film sets, including dialogue and ambient sounds.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <!-- <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/independent-artist.jpg" -->
+            <!-- class="card-img-top" alt="Independent Artist"> -->
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Recording Engineer</h5>
+              <p class="card-text">Operates studio equipment to record artists with clarity and balance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <!-- <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/independent-artist.jpg" -->
+            <!-- class="card-img-top" alt="Independent Artist"> -->
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Mixing Engineer </h5>
+              <p class="card-text">Blends multiple audio tracks into a final stereo track with balanced levels and
+                effects.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <!-- <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/independent-artist.jpg" -->
+            <!-- class="card-img-top" alt="Independent Artist"> -->
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Mastering Engineer</h5>
+              <p class="card-text">Polishes the final audio mix to ensure consistency and professional quality across
+                platforms.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <!-- <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/independent-artist.jpg" -->
+            <!-- class="card-img-top" alt="Independent Artist -->
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Sound Mixer </h5>
+              <p class="card-text">Balances dialogue, background, music, and effects in audio production.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <!-- <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/independent-artist.jpg" -->
+            <!-- class="card-img-top" alt="Independent Artist"> -->
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Theatre Sound Specialist</h5>
+              <p class="card-text">Manages sound design and live audio during stage performances.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 bg-dark text-white border-warning border-2">
+            <!-- <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/independent-artist.jpg" -->
+            <!-- class="card-img-top" alt="Independent Artist"> -->
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-bold">Audio Branding Expert</h5>
+              <p class="card-text">Crafts unique sound logos and audio identities for brands.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fees Structure Section -->
+  <section id="fees-structure" class="py-5 text-white"">
+  <div class=" container">
+    <h2 class="text-center fw-bold  text-warning mb-4" data-aos="fade-up">FEES STRUCTURE</h2>
+    <p class="text-center fs-5 mb-5" data-aos="fade-up" data-aos-delay="100">
+      Courses like this often cost between <strong>Rs. 5 lakhs to Rs. 50 lakhs</strong> globally.
+      But at <strong>AMPS</strong>, we’re committed to nurturing artists with a fee structure that is
+      <strong>reasonable, fair, and transparent</strong>.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Foundation Course -->
+      <div class="col-md-5" data-aos="zoom-in" data-aos-delay="200">
+        <div class="bg-dark text-white rounded-4 p-4 shadow-lg h-100">
+          <h4 class="fw-bold text-center mb-1">FOUNDATION COURSE</h4>
+          <p class="text-center fst-italic text-secondary mb-4">(6 Months)</p>
+          <ul class="list-unstyled fs-5">
+            <li>✅ One-time Payment: <strong>Rs. 1,50,000/-</strong></li>
+            <li>✅ Two Installments: <strong>Rs. 80,000 × 2</strong></li>
+            <li>✅ Three Installments: <strong>Rs. 60,000 × 3</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Foundation + Diploma Course -->
+      <div class="col-md-5" data-aos="zoom-in" data-aos-delay="300">
+        <div class="bg-dark text-white rounded-4 p-4 shadow-lg h-100">
+          <h4 class="fw-bold text-center mb-1">FOUNDATION + DIPLOMA COURSE</h4>
+          <p class="text-center fst-italic text-secondary mb-4">(12 Months)</p>
+          <ul class="list-unstyled fs-5">
+            <li>✅ One-time Payment: <strong>Rs. 2,50,000/-</strong></li>
+            <li>✅ Two Installments: <strong>Rs. 1,30,000 × 2</strong></li>
+            <li>✅ Three Installments: <strong>Rs. 90,000 × 3</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4 fs-6 text-white-50" data-aos="fade-up" data-aos-delay="400">
+      <p>🚫 No extra taxes or hidden charges</p>
+      <p>♿ Up to <strong>30% discount</strong> for specially abled students</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- Who Is This For Section -->
+  <section class="py-5 bg-black text-dark" id="who-for">
+    <div class="container">
+      <h2 class="text-center text-warning fw-bold mb-4">Who Is This AMPS For?</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="bg-white p-4 rounded shadow h-100">
+            <h5 class="fw-bold mb-2">🎧 Aspiring Music Producers</h5>
+            <p class="mb-0">If you're passionate about music and want to turn that passion into a profession, this
+              course is your launchpad.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="bg-white p-4 rounded shadow h-100">
+            <h5 class="fw-bold mb-2">🎓 Students & Freshers</h5>
+            <p class="mb-0">No prior experience required! Perfect for students looking for a creative and practical
+              career path.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-white p-4 rounded shadow h-100">
+            <h5 class="fw-bold mb-2">🎶 Independent Artists</h5>
+            <p class="mb-0">Learn to produce and mix your own tracks professionally and take control of your music
+              career.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="bg-white p-4 rounded shadow h-100">
+            <h5 class="fw-bold mb-2">💼 Career Switchers</h5>
+            <p class="mb-0">Thinking of transitioning to the music industry? This practical course gives you a
+              real-world head start.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="bg-white p-4 rounded shadow h-100">
+            <h5 class="fw-bold mb-2">🎤 Singers & Composers</h5>
+            <p class="mb-0">Develop full production skills to create professional-level compositions independently.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="bg-white p-4 rounded shadow h-100">
+            <h5 class="fw-bold mb-2">🎬 Filmmakers & Content Creators</h5>
+            <p class="mb-0">Understand the technical side of sound and music for your video projects or documentaries.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Faculty Section (Previously Testimonials) -->
+  <section id="faculty" class="py-5" style="background-color: #000; color: #fff;">
+    <div class="container text-center">
+      <h2 class="text-warning fw-bold mb-5">AMPS FACULTY</h2>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center g-4">
+              <div class="col-md-4">
+                <div class="card bg-white text-dark shadow p-3 rounded-4">
+                  <img
+                    src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/3.-Aakash-Patwari-Music-Production-2-2.png"
+                    class="card-img-top rounded-4" alt="Client 1">
+                  <div class="card-body">
+                    <h5 class="fw-bold">Aakash Patwari</h5>
+                    <p class="small">(Music Production)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-none d-md-block">
+                <div class="card bg-white text-dark shadow p-3 rounded-4">
+                  <img
+                    src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/4.-Tejaswita-Anant-Music-Sound-Therapy-3.png"
+                    class="card-img-top rounded-4" alt="Client 2">
+                  <div class="card-body">
+                    <h5 class="fw-bold">Tejaswita Anant</h5>
+                    <p class="small">(Music & Sound Therapy)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-none d-lg-block">
+                <div class="card bg-white text-dark shadow p-3 rounded-4">
+                  <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/5.-Sourabh-Anant-Theatre-3.png"
+                    class="card-img-top rounded-4" alt="Client 3">
+                  <div class="card-body">
+                    <h5 class="fw-bold">Sourabh Anant</h5>
+                    <p class="small">(Theatre)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+              <div class="col-md-4">
+                <div class="card bg-white text-dark shadow p-3 rounded-4">
+                  <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/6.-Samar-Mehdi-Songwriting-2.png"
+                    class="card-img-top rounded-4" alt="Client 4">
+                  <div class="card-body">
+                    <h5 class="fw-bold">Samar Mehdi</h5>
+                    <p class="small">(Songwriting)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-none d-md-block">
+                <div class="card bg-white text-dark shadow p-3 rounded-4">
+                  <img
+                    src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/7.-Hemant-Deolekar-Lyrics-Composition-2.png"
+                    class="card-img-top rounded-4" alt="Client 5">
+                  <div class="card-body">
+                    <h5 class="fw-bold">Hemant Deolekar</h5>
+                    <p class="small">(Lyrics & Composition)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-none d-lg-block">
+                <div class="card bg-white text-dark shadow p-3 rounded-4">
+                  <img src="https://academy.adanjstudio.com/wp-content/uploads/2025/07/8.-Karan-Kukreja-Concerts.png"
+                    class="card-img-top rounded-4" alt="Client 6">
+                  <div class="card-body">
+                    <h5 class="fw-bold">Karan Kukreja</h5>
+                    <p class="small">(Live Concerts)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="bg-primary text-center py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="mb-3">Admission open - Aug 2025</h2>
+      <h3 class="mb-3">Limited Seats – Only 12 Students Can Enroll</h3>
+      <p class="mb-3">At AMPS, we always prefer quality over quantity. We are building 12 future stars and stars needs
+        personal attention.</p>
+      <a href="#contact" class="btn btn-light">Apply Before Seat Fill Up</a>
+    </div>
+
+  </section>
+
+  <!-- GET COURSE DETAILS SECTION -->
+  <section class="py-5" style="background-color: #000; color: #fff;" id="course-details">
+    <div class="container">
+      <h2 class="text-center fw-bold text-warning mb-2">GET COURSE DETAILS</h2>
+      <p class="text-center text-light mb-5">Fill the form below &amp; our team will share complete course information
+        with you</p>
+
+      <form class="w-100 mx-auto" style="max-width: 700px;">
+        <input type="text" class="form-control border-0 border-bottom bg-transparent rounded-0 mb-4"
+          placeholder="Enter Your Full Name" style="color: #fff; caret-color: #fff;" required>
+
+        <input type="text" class="form-control border-0 border-bottom bg-transparent rounded-0 mb-4"
+          placeholder="Enter Your Contact Number" style="color: #fff; caret-color: #fff;" required>
+
+        <input type="email" class="form-control border-0 border-bottom bg-transparent rounded-0 mb-4"
+          placeholder="Enter Your Email ID" style="color: #fff; caret-color: #fff;" required>
+
+        <input type="text" class="form-control border-0 border-bottom bg-transparent rounded-0 mb-4"
+          placeholder="Enter Your Current City" style="color: #fff; caret-color: #fff;" required>
+
+        <input type="number" class="form-control border-0 border-bottom bg-transparent rounded-0 mb-4"
+          placeholder="Enter Your Age" style="color: #fff; caret-color: #fff;" required>
+
+        <select class="form-select border-0 border-bottom bg-transparent rounded-0 mb-4"
+          style="color: #fff; background-color: transparent; caret-color: #fff;" required>
+          <option disabled selected style="color: #888;">Select Course</option>
+          <option style="color: #000;">6 Month Certification Course</option>
+          <option style="color: #000;">1-Year Diploma Course</option>
+        </select>
+
+
+        <textarea rows="3" class="form-control border-0 border-bottom bg-transparent rounded-0 mb-4"
+          placeholder="Tell us about your music interest (optional)" style="color: #fff; caret-color: #fff;"></textarea>
+
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-warning text-black px-4 py-2 rounded-pill fw-semibold">
+            Get Complete Course Details
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-warning text-dark">
+    <div class="container text-center">
+      <h2 class="mb-4 fw-bold">Our Services</h2>
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card h-100 p-4 border-0 shadow">
+            <h5 class="fw-bold">6-Month Certification Course</h5>
+            <p>● Certification in Music Production & Sound Engineering</p>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 p-4 border-0 shadow">
+            <h5 class="fw-bold">1-Year Diploma Course</h5>
+            <p>● Professional Diploma in Music Direction & Production</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Stats Section -->
+  <section id="stats" class="py-5 bg-dark text-center text-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <h2 class="counter" data-target="1200">500</h2>
+          <p>Happy Clients</p>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <h2 class="counter" data-target="50">40</h2>
+          <p>Awards</p>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <h2 class="counter" data-target="20">15</h2>
+          <p>Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item" data-aos="fade-up">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Do I need any prior experience to join?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">No, we welcome both beginners and those with some musical background. Our
+              courses are designed to take you from foundational to professional level, regardless of your starting
+              point.</div>
+          </div>
+        </div>
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+              What are the class timings?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Regular Classes will be on: Monday, Thursday, Saturday Morning 9AM to 12PM.
+              Guest faculty workshop timing may vary.</div>
+          </div>
+        </div>
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+              What equipment do I need to bring?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">A Laptop (Preferably MacBook) and a Headphone is Mandatory. However, having a
+              Mic and a MIDI Keyboard can be beneficial for practice outside class hours.</div>
+          </div>
+        </div>
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+              What's the admission process?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Our admission process is simple: 1) Fill the application form, 2) Attend a
+              counseling session (in-person or online), 3) Complete the enrollment formalities. There are no entrance
+              exams.</div>
+          </div>
+        </div>
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Will I get job placement assistance?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Yes! We provide complete career support including portfolio building, industry
+              connections, and job placement assistance to all our students upon course completion.</div>
+          </div>
+        </div>
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+              What is the Academy Location?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Bhopal, Madhya Pradesh.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-warning fw-bold text-center mb-5" data-aos="fade-up">Hear What Our Students Say About AMPS!</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col" data-aos="fade-up">
+          <div class="card bg-black text-white h-100 border-warning border-2">
+            <div class="card-body text-center">
+              <!-- <img src="images/student1.jpg" alt="Student 1" class="rounded-circle mb-3" width="80" height="80"> -->
+              <h5 class="card-title text-warning">Riya Sharma</h5>
+              <p class="card-text">"AMPS changed my life. I landed my first studio internship within 2 months of
+                joining. Highly recommended!"</p>
+              <div class="text-warning">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <div class="card bg-black text-white h-100 border-warning border-2">
+            <div class="card-body text-center">
+              <!-- <img src="images/student2.jpg" alt="Student 2" class="rounded-circle mb-3" width="80" height="80"> -->
+              <h5 class="card-title text-warning">Amit Verma</h5>
+              <p class="card-text">"The mentorship is next level. I got real feedback from professionals that helped
+                shape my sound."</p>
+              <div class="text-warning">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card bg-black text-white h-100 border-warning border-2">
+            <div class="card-body text-center">
+              <!-- <img src="images/student3.jpg" alt="Student 3" class="rounded-circle mb-3" width="80" height="80"> -->
+              <h5 class="card-title text-warning">Neha Kapoor</h5>
+              <p class="card-text">"From complete beginner to releasing my first track — AMPS made it possible!"</p>
+              <div class="text-warning">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Newsletter Signup -->
+  <section class="bg-black text-center text-white py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="mb-3">Stay Updated!</h2>
+      <p class="mb-4">Subscribe to our newsletter and stay up to date with our latest news.</p>
+      <form class="d-flex justify-content-center">
+        <input type="email" class="form-control w-50 me-2" placeholder="Enter your email" />
+        <button type="submit" class="btn btn-warning text-black">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  <footer id="contact" class="text-white py-5 bg-dark">
+    <div class="container">
+      <div class="row">
+
+        <!-- Contact Info -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-warning">Get In Touch</h5>
+          <p>101, Hummingbird, Near Akriti</p>
+          <p>Eco City Main gate, Bawadiya</p>
+          <p>Kala, Bhopal – 462026</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-warning">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#courses" class="text-white text-decoration-none">Courses</a></li>
+            <li><a href="#faculty" class="text-white text-decoration-none">Faculty</a></li>
+            <li><a href="#faq" class="text-white text-decoration-none">FAQs</a></li>
+            <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal + Contact Us side by side -->
+        <div class="col-md-4 mb-4">
+          <div class="d-flex flex-wrap justify-content-between">
+
+            <!-- Legal -->
+            <div class="me-4">
+              <h5 class="text-warning">Legal</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Refund Policy</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div>
+              <h5 class="text-warning">Contact Us</h5>
+              <p class="mb-1">Email: adanjacademy@gmail.com</p>
+              <p class="mb-2">Phone: +91-9713671996</p>
+              <div class="mt-1">
+                <a href="https://facebook.com" target="_blank" class="text-white me-2">
+                  <i class="fab fa-facebook fa-lg"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="text-white me-2">
+                  <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="text-white me-2">
+                  <i class="fab fa-youtube fa-lg"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="text-white">
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="text-center mt-4">
+        <p>&copy; 2025 BrandName. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed Bottom Button Container (Centered, Taller) -->
+  <div class="position-fixed start-50 translate-middle-x" style="bottom: 0; z-index: 1050; width: 100%;">
+    <div class="bg-warning py-4 rounded-top shadow-lg">
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+
+        <a href="#course-details" class="btn btn-dark text-white fw-bold px-4 py-2 rounded-pill shadow-sm">
+          Get Details
+        </a>
+
+        <a href="#contact" class="btn btn-dark text-white fw-bold px-4 py-2 rounded-pill shadow-sm">
+          Contact Us
+        </a>
+
+        <a href="#course-details" class="btn btn-dark text-white fw-bold px-4 py-2 rounded-pill shadow-sm">
+          Apply Now
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+  <script>
+    const video = document.getElementById('aboutVideo');
+    const toggleBtn = document.getElementById('toggleSound');
+
+    toggleBtn.addEventListener('click', () => {
+      video.muted = !video.muted;
+      toggleBtn.textContent = video.muted ? '🔇 Unmute' : '🔊 Mute';
+    });
+  </script>
+
+  <script>
+    function handleCourseForm(e) {
+      e.preventDefault();
+      alert("Thank you! Your course inquiry has been received.");
+      e.target.reset();
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+
+</html>
